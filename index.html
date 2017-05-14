@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Francesca's Weather App</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700,800" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <div id="loading">
+    <?xml version="1.0" encoding="utf-8"?><svg width='186px' height='186px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-spin"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><g transform="translate(50 50)"><g transform="rotate(0) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.87s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.87s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(45) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.75s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.75s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(90) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.62s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.62s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(135) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.5s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.5s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(180) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.37s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.37s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(225) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.25s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.25s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(270) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0.12s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0.12s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g><g transform="rotate(315) translate(34 0)"><circle cx="0" cy="0" r=6 fill="#000"><animate attributeName="opacity" from="1" to="0.1" begin="-0s" dur="1s" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="scale" from="1.1" to="1" begin="-0s" dur="1s" repeatCount="indefinite"></animateTransform></circle></g></g></svg>
+  </div>
+
+  <div id="theApp">
+    <h1>COUNTRY, city</h1>
+
+    <div id="theTempreature">
+      <p><span id="temperature"></span> &deg<span class="celFar" onclick="toggleWeather();">C</span></p>
+    </div>
+
+    <div id="theIcon">
+      <img src ="weatherIcons/cloud.jpg"</img>
+    </div>
+
+    <div id="statistics">
+      <div id="theWind">
+        <img src ="http://i1102.photobucket.com/albums/g452/Francesca_Costa/windy.jpg"</img>
+        <p class="windInfo"></p>
+      </div>
+
+      <div id="theHumidity">
+        <img src ="http://i1102.photobucket.com/albums/g452/Francesca_Costa/humidity.jpg"</img>
+        <p class="humidityInfo"></p>
+      </div>
+
+      <div id="minTemp">
+        <img src ="http://i1102.photobucket.com/albums/g452/Francesca_Costa/mintemp.jpg"</img>
+        <p class="minTempInfo"></p>
+      </div>
+
+      <div id="maxTemp">
+        <img src ="http://i1102.photobucket.com/albums/g452/Francesca_Costa/maxtemp.jpg"</img>
+        <p class="maxTempInfo"></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+
+</body>
+</html>
